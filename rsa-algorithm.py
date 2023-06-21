@@ -116,6 +116,7 @@ def encriptar_y_desencriptar(a: int, p: int, q: int):
 
 
 def general(a: int):
+    """Requiere a no negativo, se recomienda a pequeño (menor a p*q)"""
     assert a >= 0
     par_primos = generador_tupla_primos()
     while not a < par_primos[0] * par_primos[1]:
